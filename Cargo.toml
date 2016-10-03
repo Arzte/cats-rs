@@ -3,11 +3,47 @@ name = "cat"
 version = "0.1.0"
 authors = ["TheDoctorsLife <hoffmeyer25@gmail.com>"]
 description = "A library to do various cat related things, such as facts about cats and more."
-repository = "https://github.com/TheDoctorsLife/cats-rs/"
+repository = "https://gitlab.com/The_Doctors_Life/cats-rs"
 readme = "README.md"
 keywords = ["cat", "cats", "catfact", "catfacts", "cat-fact", "cat-facts", "catimage", "catimages", "cat-image", "cat-images"]
 license = "AGPL-3.0"
 
+[lib]
+# The name of a target is the name of the library that will be generated. This
+# is defaulted to the name of the package or project, with any dashes replaced
+# with underscores. (Rust `extern crate` declarations reference this name;
+# therefore the value must be a valid Rust identifier to be usable.)
+name = "cats"
+
+# This field points at where the crate is located, relative to the `Cargo.toml`.
+path = "src/lib.rs"
+
+# A flag for enabling unit tests for this target. This is used by `cargo test`.
+test = true
+
+# A flag for enabling documentation tests for this target. This is only relevant
+# for libraries, it has no effect on other sections. This is used by
+# `cargo test`.
+doctest = true
+
+# A flag for enabling benchmarks for this target. This is used by `cargo bench`.
+bench = true
+
+# A flag for enabling documentation of this target. This is used by `cargo doc`.
+doc = true
+
+# If the target is meant to be a compiler plugin, this field must be set to true
+# for Cargo to correctly compile it and make it available for all dependencies.
+plugin = false
+
+# If the target is meant to be a "macros 1.1" procedural macro, this field must
+# be set to true.
+rustc-macro = false
+
+# If set to false, `cargo test` will omit the `--test` flag to rustc, which
+# stops it from generating a test harness. This is useful when the binary being
+# built manages the test runner itself.
+harness = true
 
 [build-dependencies]
 serde_codegen = "0.8"
