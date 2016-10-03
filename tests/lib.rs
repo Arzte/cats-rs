@@ -2,8 +2,8 @@
 mod tests {
     #[test]
     fn it_works() {
-        extern crate catfact;
+        extern crate cat;
 
-        println!("{}", catfact::fact("1"));
+        println!("{}", cat::fact("1"));
     }
 }

@@ -1,7 +1,8 @@
 [package]
-name = "catfact"
+name = "cat"
 version = "0.1.0"
 authors = ["TheDoctorsLife <hoffmeyer25@gmail.com>"]
+description = "A library to do various cat related things, such as facts about cats and more."
 
 [build-dependencies]
 serde_codegen = "0.8"
