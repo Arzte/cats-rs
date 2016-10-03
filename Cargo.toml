@@ -1,0 +1,17 @@
+[package]
+name = "catfact"
+version = "0.1.0"
+authors = ["TheDoctorsLife <hoffmeyer25@gmail.com>"]
+
+[build-dependencies]
+serde_codegen = "0.8"
+
+[dependencies]
+hyper = "0.9"
+serde = "0.8"
+serde_json = "0.8"
+serde_derive = "0.8"
+
+[dependencies.url]
+feature = ["serde"]
+version = "1.2"
