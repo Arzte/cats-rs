@@ -13,7 +13,7 @@ license = "AGPL-3.0"
 # is defaulted to the name of the package or project, with any dashes replaced
 # with underscores. (Rust `extern crate` declarations reference this name;
 # therefore the value must be a valid Rust identifier to be usable.)
-name = "cats"
+name = "cat"
 
 # This field points at where the crate is located, relative to the `Cargo.toml`.
 path = "src/lib.rs"
